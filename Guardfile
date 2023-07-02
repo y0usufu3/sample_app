@@ -58,7 +58,7 @@ end
 # Returns the integration tests corresponding to the given resource.
 def integration_tests(resource = :all)
   if resource == :all
-    Dir["test/integration/*"]
+    Dir["test/integration/*"]g
   else
     Dir["test/integration/#{resource}_*.rb"]
   end

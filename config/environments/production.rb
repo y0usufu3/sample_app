@@ -71,7 +71,7 @@ Rails.application.configure do
   host = https://sample-app-rf2i.onrender.com
   config.action_mailer.default_url_options = { host: host }
   ActionMailer::Base.smtp_settings = {
-    :post           => 587,
+    :port           => 587,
     :address        => "smtp.mailgun.org",
     :user_name      => ENV["MAILGUN_SMTP_LOGIN"],
     :password       => ENV["MAILGUN_SMTP_PASSWORD"],
